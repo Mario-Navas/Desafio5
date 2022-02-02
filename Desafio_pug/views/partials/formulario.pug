@@ -1,0 +1,20 @@
+html 
+    head
+        Title='Ingreso de productos'
+    body
+        block prod
+            form(id="login" action="/guardar" method="post")
+                label(for='titulo')
+                b Titulo
+                input#titulo.form-control(type='text' name='titulo')
+                br
+                label(for='precio')
+                b Precio
+                input#titulo.form-control(type='text' name='precio')
+                br
+                label(for='miniatura')
+                b Miniatura
+                input#titulo.form-control(type='text' name='miniatura')
+                br
+                input(type="submit" value="enviar")
+
